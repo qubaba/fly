@@ -1,0 +1,16 @@
+server:
+  port: 16600
+
+spring:
+  datasource:
+    username: root
+    password: Qubaba8888....
+    url: jdbc:mysql://192.168.62.128:3306/fly_auth
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.62.128
+  security:
+    user:
+      name: user
+      password: user
