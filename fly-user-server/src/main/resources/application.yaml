@@ -1,0 +1,16 @@
+server:
+  port: 10060
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: "http://localhost:16600/oauth2/default/v1/keys"
+  redis:
+    host: 192.168.62.128
+  datasource:
+    username: root
+    password: Qubaba8888....
+    url: jdbc:mysql://192.168.62.128:3306/fly_auth
+    driver-class-name: com.mysql.cj.jdbc.Driver

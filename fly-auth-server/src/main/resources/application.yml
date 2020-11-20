@@ -14,3 +14,9 @@ spring:
     user:
       name: user
       password: user
+    oauth2:
+      client:
+        registration:
+          test:
+            client-id: "abcd"
+            client-secret: "1234"
