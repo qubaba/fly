@@ -6,6 +6,10 @@ target/
 *.zip
 *.tar
 *.tar.gz
+mvnw
+mvnw.cmd
+*.gitignore
+.mvn
 
 # eclipse ignore
 .settings/
