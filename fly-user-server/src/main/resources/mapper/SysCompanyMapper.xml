@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qubaba.flyuserserver.dao.SysCompanyMapper">
+  <resultMap id="BaseResultMap" type="com.qubaba.flyuserserver.entity.domain.SysCompany">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="company_id" jdbcType="BIGINT" property="companyId" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+  </resultMap>
+</mapper>

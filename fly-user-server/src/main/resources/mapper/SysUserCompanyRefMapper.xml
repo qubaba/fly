@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qubaba.flyuserserver.dao.SysUserCompanyRefMapper">
+  <resultMap id="BaseResultMap" type="com.qubaba.flyuserserver.entity.domain.SysUserCompanyRef">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="user_id" jdbcType="BIGINT" property="userId" />
+    <id column="company_id" jdbcType="BIGINT" property="companyId" />
+    <id column="dept_id" jdbcType="BIGINT" property="deptId" />
+    <id column="job_id" jdbcType="BIGINT" property="jobId" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="modified_user_id" jdbcType="BIGINT" property="modifiedUserId" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+  </resultMap>
+</mapper>

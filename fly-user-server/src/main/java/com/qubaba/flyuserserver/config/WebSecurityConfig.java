@@ -9,6 +9,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.nio.charset.StandardCharsets;
+
 /**
  * @author QuPeng
  * @date 2021/1/18 10:46
@@ -23,7 +25,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     PasswordEncoder passwordEncoder() {
         return new PasswordEncoder() {
 
-
             @Override
             public String encode(CharSequence charSequence) {
                 return String.valueOf(charSequence);
@@ -37,6 +38,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             }
         };
     }
+
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {

@@ -7,7 +7,7 @@ spring:
   datasource:
     username: root
     password: Qubaba8888....
-    url: jdbc:mysql://192.168.62.132:3306/fly_auth
+    url: jdbc:mysql://192.168.62.132:3306/fly_user
     driver-class-name: com.mysql.cj.jdbc.Driver
 management:
   server:

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qubaba.flyuserserver.dao.SysAccountMapper">
+  <resultMap id="BaseResultMap" type="com.qubaba.flyuserserver.entity.domain.SysAccount">
+    <id column="account_id" jdbcType="BIGINT" property="accountId" />
+    <result column="account" jdbcType="VARCHAR" property="account" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="is_expired" jdbcType="TINYINT" property="expired" />
+    <result column="is_delete" jdbcType="TINYINT" property="delete" />
+    <result column="is_invalid" jdbcType="TINYINT" property="invalid" />
+    <result column="is_locked" jdbcType="TINYINT" property="locked" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified" />
+    <result column="create_user_id" jdbcType="BIGINT" property="createUserId" />
+    <result column="modified_user_id" jdbcType="BIGINT" property="modifiedUserId" />
+  </resultMap>
+</mapper>
