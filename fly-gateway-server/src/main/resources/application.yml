@@ -1,5 +1,5 @@
 server:
-  port: 16600
+  port: 8080
 
 spring:
   application:
@@ -15,11 +15,9 @@ spring:
   cloud:
     nacos:
       server-addr: 192.168.62.133:8848
-
-management:
-  server:
-    port: 16601
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+    gateway:
+      routes:
+        - id: auth-server
+          uri: http://www.google.com
+          predicates:
+          - Path=/auth-server/*

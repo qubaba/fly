@@ -1,17 +1,15 @@
-package com.qubaba.flyauthserver;
+package com.qubaba.flygatewayserver;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.qubaba.flyauthserver")
 @EnableDiscoveryClient
-public class FlyAuthServerApplication {
+public class FlyGatewayServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FlyAuthServerApplication.class, args);
+        SpringApplication.run(FlyGatewayServerApplication.class, args);
     }
 
 }
